@@ -1,0 +1,78 @@
+
+.loader-container {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .letters-container {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .letter {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: white;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+    animation: bounce 1s ease-in-out infinite;
+    animation-duration: 1s;
+  }
+  
+  .letter-primary {
+    color: #22d3ee; /* cyan-400 equivalent */
+  }
+  
+  .letter-secondary {
+    color: #a5f3fc; /* cyan-200 equivalent */
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 8rem;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background-color: #22d3ee; /* cyan-400 equivalent */
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .letters-container {
+      gap: 8px;
+    }
+    
+    .letter {
+      font-size: 3rem;
+    }
+  }

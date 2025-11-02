@@ -1,0 +1,183 @@
+.about {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.hero h1 span {
+  color: #14b8a6;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.statsGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 5rem;
+}
+
+.statCard {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.statIcon {
+  background-color: #ccfbf1;
+  color: #0f766e;
+  padding: 0.75rem;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.statCard h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.statCard p {
+  color: #475569;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.storyImageBox {
+  position: relative;
+}
+
+.storyImage {
+  border-radius: 0.75rem;
+  width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.storyTag {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  background: #14b8a6;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.missionCard,
+.visionCard {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+}
+
+.missionCard {
+  background-color: #f0fdfa;
+  border-color: #99f6e4;
+}
+
+.visionCard {
+  background-color: #f8fafc;
+}
+
+.missionCard h3,
+.visionCard h3 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.missionCard p,
+.visionCard p {
+  color: #475569;
+  line-height: 1.75;
+}
+
+.teamIntro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.teamIntro h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: bold;
+}
+
+.teamIntro p {
+  color: #64748b;
+  font-size: 1.125rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.memberCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.memberCard img {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.memberCard h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.memberCard .role {
+  color: #14b8a6;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
